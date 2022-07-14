@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/105bcdf182.js" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <title>Bootstrap Portfolio</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-md navbar-light bg-light">
-    <div class="container">
+  <nav id="main"  class="navbar navbar-expand-md fixed-top navbar-light bg-light">
+    <div class="container  d-flex flex-1">
       <a href="#" class="navbar-brand">My Logo</a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -17,13 +18,16 @@
       >
     <span class="navbar-toggler-icon"></span>
     </button>
-        <div class="navbar-collapse" id="navmenu">
-        <ul class="navbar-nav ms-auto">
+        <div class="navbar-collapse align-self-end" id="navmenu">
+        <ul class="nav nav-pills">
         <li class="nav-item">
-          <a href="#" class="nav-link ">Portfolio</a>
+          <a href="#port" class="nav-link ">Portfolio</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link ">About</a>
+          <a href="#pro" class="nav-link ">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link ">About</a>
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link ">Contact</a>
@@ -32,7 +36,10 @@
     </div>
     </div>
   </nav>
-  <section class="bg-white text-dark  p-5 " >
+  <div data-bs-spy="scroll" data-bs-target="#main" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+    
+  
+  <section class="bg-white text-dark  p-5 " id="port" >
     <div class="row align-items-start">
 
       <div class="container d-flex flex-column align-items-start p-4" >
@@ -42,7 +49,7 @@
          some of my work and experience!If you like what you see
          and have a project you need coded don't hesitate to contact me.
        </p> 
-       <a href="#" class="btn btn-primary btn-sm align-self-start"  data-bs-toggle="modal" data-bs-target="#myModal"> Let's connect</a>
+       <a href="#" class="btn btn-primary btn-sm align-self-start"  > Let's connect</a>
        
       </div>
     </div>
@@ -91,7 +98,7 @@
     </div>
   </div>
   </section>
-  <section class="bg-light text-dark d-flex flex-column align-items-center p-5">
+  <section id="pro" class="bg-light text-dark d-flex flex-column align-items-center p-5">
     <div class="container" >
       <div class="row mb-5 pb-5">
         <div class="card d-flex flex-sm-row py-2">
@@ -200,16 +207,54 @@
     </div>
   </section>
 
-  <section class="about d-flex">
+  <section class="about d-flex" id="about">
     <div class="container d-flex flex-row">
       <div class="right flex-1">
         <h2>About Myself</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quas, quaerat incidunt iusto facere qui voluptatum molestiae. Veniam exercitationem repellat repellendus alias itaque, cum ab minus, aut odio eum tenetur.</p>
+        <p>I'm a software developer! I can help you
+          build a product, feature or website Look
+          through some of my work and 
+          Experience! If you like what you see and
+          have a project you need coded, don't 
+          hestiate to contact me.</p>
+          <a href="#" class="btn btn-primary btn-sm align-self-start"  > Let's connect</a>
+          <div class=" mt-2 d-flex ">
+            <ul class="d-flex gap-3 align-self-start"  style="list-style: none; font-size: 18px;">
+                <li>
+                   <a href="#">
+                    <i class="fa-brands fa-twitter fa"></i>
+                   </a>
+               </li>        
+                <li>
+                   <a href="#">
+                    <i class="fa-brands fa-linkedin-in fa"></i>
+                   </a>
+               </li>        
+                <li>
+                   <a href="#">
+                    <i class="fa-brands fa-medium fa" ></i>
+                   </a>
+               </li>        
+                <li>
+                   <a href="#">
+                    <i class="fa-brands fa-github fa"></i>
+                   </a>
+               </li>        
+                <li>
+                   <a href="#">
+                    <i class="fa-solid fa-hand-peace fa"></i>
+                   </a>
+               </li>        
+            </ul>
+        </div>
+        <a href="#" class="btn btn-primary btn-sm mb-4" style="width: 15%;">Get My Resume!</a>
+
       </div>
-      <div class="left flex-1"></div>
+      <div class="left d-flex flex-1"></div>
+        
     </div>
   </section>
-
+</div>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
